@@ -1,0 +1,554 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <script src="https://cmp.osano.com/AzZdadT7RYxgX26Ea/916a2918-d871-49be-b920-736726948776/osano.js"></script>
+    
+    <script>
+  var supportedBrowsers = /Edge?\/(13[89]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(14\d|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(10[5-9]|1[1-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(18\.([5-9]|\d{2,})|(19|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(12\d|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(18[._]([5-9]|\d{2,})|(19|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Opera Mini|Android:?[ /-](14\d|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(14[2-9]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14\d|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(2[7-9]|[3-9]\d|\d{3,})\.\d+|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)/;
+</script>
+
+    <script>
+      var _rollbarConfig = {
+        accessToken: '44524438f5da4efa918c4337488b86e4',
+        captureEmail: true,
+        captureUncaught: true,
+        captureUnhandledRejections: true,
+        checkIgnore: function(isUncaught, args, payload) {
+          return !supportedBrowsers.test(navigator.userAgent);
+        },
+        enabled: true,
+        ignoredMessages: [
+          '__gCrWeb',
+          '_AutofillCallbackHandler',
+          '^eljs\.',
+          'Access is denied',
+          'Blocked a frame with origin',
+          'Can\'t find variable: eljs',
+          'Can\'t find variable: gmo',
+          'Can\'t find variable: IFrameMessageHandler',
+          'Can\'t find variable: lastScrollEventTimestamp',
+          'eljs is not defined',
+          'ibPauseAllVideos',
+          'IFrameMessageHandler is not defined',
+          'Script error\.',
+          'STREETVIEW_GET_PANORAMA: ZERO_RESULTS',
+          'vid_mate_check is not defined',
+          'WrongDocumentError',
+          'ztePageScrollModule is not defined'
+        ],
+        hostBlockList: [
+          'chrome-extension:\/\/',
+          'file:\/\/\/',
+          'https:\/\/beacon-v2\.helpscout\.net',
+          'safari-extension:\/\/',
+          'safari-web-extension:\/\/',
+          'webkit-masked-url:\/\/'
+        ],
+        payload: {
+          client:  {
+            javascript: {
+              code_version: '760f79c00589f1bc5ae82e642d52d6ae65bddb0d',
+              guess_uncaught_frames: true,
+              source_map_enabled: true,
+            }
+          },
+          environment: 'production',
+          server: {
+            branch: 'main',
+            root: 'webpack://eljs/./'
+          }
+        }
+      };
+      if (false) {
+        _rollbarConfig.payload.person = {
+          id: 'None',
+          email: ''
+        };
+      }
+      // Rollbar Snippet
+      !function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(5);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.26.4/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2),t=o(3);function a(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var l=0;function i(r,e){this.options=r,this._rollbarOldOnError=null;var o=l++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var s=o(4),d=function(r,e){return new i(r,e)},c=function(r){return new s(d,r)};function u(r){return a((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}i.prototype.loadFull=function(r,e,o,n,t){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=a((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,a,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(a=n.args||[],i=0;i<a.length;++i)if("function"==typeof(l=a[i])){l(e);break}}"function"==typeof t&&t(e)}()}})),d.insertBefore(i,s)},i.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<p.length;++f)i.prototype[p[f]]=u(p[f]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var l=new c(e);return a((function(){e.captureUncaught&&(l._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,l,!0),e.wrapGlobalEventHandlers&&t(r,l,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,l,!0);var a=e.autoInstrument;return!1!==e.enabled&&(void 0===a||!0===a||function(r){return!("object"!=typeof r||void 0!==r.page&&!r.page)}(a))&&r.addEventListener&&(r.addEventListener("load",l.captureLoad.bind(l)),r.addEventListener("DOMContentLoaded",l.captureDomContentLoaded.bind(l))),r[o]=l,l}))()}},Rollbar:c}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}}},function(r,e,o){"use strict";function n(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports=function(r,e,o){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&n(e,r[a].prototype,o)}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+      // End Rollbar Snippet
+    </script>
+
+    <!-- dataLayer for Google Tag Manager -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+    </script>
+
+    
+      
+
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KLLCZDX');</script>
+      <!-- End Google Tag Manager -->
+      
+      
+
+      
+
+      
+    
+
+    
+    
+      <script src="https://js.stripe.com/acacia/stripe.js" async></script>
+    
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  <meta name="description" content="Not Found">
+
+
+    <link rel="preload" as="font" type="font/woff2"  href="https://everloved.com/static/fonts/lato/lato-v23-latin-300.716309aab2bc.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2"  href="https://everloved.com/static/fonts/lato/lato-v23-latin-regular.e1b3b5908c9c.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2"  href="https://everloved.com/static/fonts/lato/lato-v23-latin-700.de69cf9e514d.woff2" crossorigin>
+    
+
+    <!-- SEO -->
+    
+      
+    
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="https://everloved.com/static/css/core.0f25ee2884d7.css">
+    
+    
+  
+  <link rel="stylesheet" href="https://everloved.com/static/css/memorialsPublic~memorialsPrivate.47e28101582f.css">
+<link rel="stylesheet" href="https://everloved.com/static/css/memorialsPublic.5816f230d836.css">
+
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://everloved.com/static/apple-touch-icon.1ae9d9693629.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://everloved.com/static/favicon-32x32.178dfca24ff4.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://everloved.com/static/favicon-16x16.c50058e60eff.png">
+    <link rel="manifest" href="https://everloved.com/static/site.d8072523af1e.webmanifest">
+    <link rel="mask-icon" href="https://everloved.com/static/safari-pinned-tab.45f51be17113.svg" color="#7f465c">
+    <!-- <link rel="shortcut icon" href="https://everloved.com/static/favicon.38260adbd1e6.ico"> -->
+    <meta name="msapplication-TileColor" content="#7f465c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+
+    <title>Not Found</title>
+  </head>
+  <body class="error-page d-flex flex-column ">
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLLCZDX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+
+    
+      
+
+
+<div class="el-nav-overlay el-nav-overlay-nav">
+  <nav>
+    <ul class="container d-flex">
+      
+        <li>
+          
+          
+            <a href="/login/?next=%2Flife-of%2Fvincent-villuri%2Fwebkit-masked-url%3A">Log in</a>
+          
+        </li>
+      
+      <li>
+        <a href="/funeral-planning/?flow=104">Plan a funeral</a>
+      </li>
+      <li>
+        <a href="/memorial/create/?flow=104">Create memorial website</a>
+      </li>
+      <li>
+        <a href="/funeral-homes/">Find a funeral home</a>
+      </li>
+      <li>
+        <a href="/cemeteries/">Find a cemetery</a>
+      </li>
+      <li>
+        <a href="/hospices/">Find a hospice</a>
+      </li>
+      <li>
+        <a href="/articles/">Read funeral articles</a>
+      </li>
+      <li>
+        <a href="/funeral-products/?flow=104">Browse funeral products</a>
+      </li>
+      <li>
+        <a href="/funeral-flowers/browse/?flow=104">Send flowers</a>
+      </li>
+
+      
+
+      
+      
+        <hr>
+        <li>
+          <a href="https://support.everloved.com" target="_blank">Visit our help center</a>
+        </li>
+        <li>
+          Email: <a href="mailto:support@everloved.com">support@everloved.com</a>
+        </li>
+        
+          <li>
+            <a class="support-chat-beacon-link" href="javascript:;" onClick="Beacon('open');">Chat with us live</a>
+          </li>
+        
+      
+
+      
+        <hr>
+        
+        <li><a href="/for-funeral-homes/">Funeral homes</a></li>
+        <li><a href="/for-cemeteries/">Cemeteries</a></li>
+        <li><a href="/for-hospices/">Hospices</a></li>
+        <li><a href="/for-charities/">Charities</a></li>
+      
+    </ul>
+  </nav>
+</div>
+
+<div class="el-nav-overlay el-nav-overlay-notifications">
+  <div class="notifications-container notifications-container-mobile">
+    <div class="notifications-title-container">
+      <h2>
+        Notifications
+      </h2>
+    </div>
+    
+    <div class="empty-notifications-message">No notifications</div>
+    <div class="load-more-link-container ">
+      <a class="load-more-link load-more-link-mobile" data-window=6 href="javascript:;">Load more</a>
+    </div>
+  </div>
+</div>
+
+<div class="el-navbar-container primary-nav-container">
+  <nav class="el-navbar primary-nav">
+    <div class="container d-flex">
+      <div class="el-navbar-brand d-flex align-items-end">
+        
+          <a class="header-logo track-click-with-delay" href="/" data-event-action="visit-logo" data-event-category="sitewide navigation">
+            <img src="https://everloved.com/static/svg/header-logo.6b0f02745d01.svg" width="160" alt="Ever Loved" class="recolor primary">
+          </a>
+        
+        
+          <div class="el-navbar-toggler el-navbar-mobile-toggler el-navbar-mobile-toggler-nav track-click" data-event-action="open-hamburger-menu" data-event-category="sitewide navigation">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
+
+          
+
+          
+        
+      </div>
+
+      
+
+      <div class="el-navbar-collapse d-none d-md-block">
+        <ul class="el-navbar-nav d-flex">
+          
+
+          
+
+          
+
+          
+            <li class="desktop-toggler-container">
+              <div class="el-navbar-toggler el-navbar-desktop-toggler el-nav-option-toggler link-style-text track-click" id="navbarForBusinessesDropdownMenuLink" data-event-action="open-for-businesses-menu" data-event-category="sitewide navigation">
+                For Businesses <img class="caret recolor primary" src="https://everloved.com/static/svg/caret-down.18f351e71b18.svg" width="18" height="11" alt="Caret icon pointing downward">
+              </div>
+
+              <div class="el-nav-dropdown">
+                <div class="dropdown-arrow"></div>
+                <div class="dropdown-content">
+                  
+                  <a href="/for-funeral-homes/">Funeral homes</a>
+                  <a href="/for-cemeteries/">Cemeteries</a>
+                  <a href="/for-hospices/">Hospices</a>
+                  <a href="/for-charities/">Charities</a>
+                </div>
+              </div>
+            </li>
+          
+
+          
+            <li class="desktop-toggler-container" data-tour-target-for="tour-help">
+              <div class="el-navbar-toggler el-navbar-desktop-toggler el-nav-option-toggler link-style-text track-click" id="navbarHelpDropdownMenuLink" data-event-action="open-help-menu" data-event-category="sitewide navigation">
+                Help <img class="caret recolor primary" src="https://everloved.com/static/svg/caret-down.18f351e71b18.svg" width="18" height="11" alt="Caret icon pointing downward">
+              </div>
+
+              <div class="el-nav-dropdown">
+                <div class="dropdown-arrow"></div>
+                <div class="dropdown-content">
+                  <a href="https://support.everloved.com" target="_blank">Visit our help center</a>
+                  <div class="non-link-menu-item">Send us an email: <a href='mailto:support@everloved.com'>support@everloved.com</a></div>
+                  
+                    <div><a class="support-chat-beacon-link" href="javascript:;" onClick="Beacon('open');">Chat with us live</a></div>
+                  
+                </div>
+              </div>
+            </li>
+          
+
+          
+            <li class="el-nav-item">
+              
+              
+                <a class="el-nav-link" href="/login/?next=%2Flife-of%2Fvincent-villuri%2Fwebkit-masked-url%3A">Log in</a>
+              
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+
+
+
+      
+
+
+
+      
+
+<div class="announcements d-none">
+  
+</div>
+
+    
+
+    <main id="content" class="error-page-content">
+      
+  <div class="container">
+    <h1>
+  
+    This page doesn't exist for this memorial website.
+  
+</h1>
+    <div class="error-page-subheader body-text-large">
+  
+    If you're trying to access the memorial website for Vincent Villuri, click below to view it.
+  
+</div>
+    
+  
+    <div class="body-card">
+      
+
+<div class="memorial-card d-flex">
+  <div class="memorial-card-info d-flex">
+    <div class="memorial-card-photo-container">
+      <a class="track-click" href="/life-of/vincent-villuri/" data-event-action="visit-memorial" data-event-category="">
+        <div style="background-image: url(https://everloved.com/media/photos/deceased-photos/d98a447b-dcd2-4448-bcc4-553d10ee9782.trimmed.jpg);" class="img-fluid profile-photo" alt="Photo of Vincent Vijith Villuri">
+        </div>
+      </a>
+    </div>
+    <div class="deceased-info">
+      <a class="track-click link-large" href="/life-of/vincent-villuri/" data-event-action="visit-memorial" data-event-category="">
+        Vincent Vijith Villuri
+      </a>
+
+      
+        <p>Oct 8, 2003 &mdash; Sep 8, 2025</p>
+      
+      
+        <p>Franklin Park, NJ</p>
+      
+      
+        <div class="obituary-summary d-none d-lg-block">
+          <p>&quot;13 Brethren, I do not regard myself as having laid hold of it yet; but one thing I do: forgetting …</p>
+          <a class="track-click d-inline-block" href="/life-of/vincent-villuri/" data-event-action="visit-memorial" data-event-category="">
+            Read more<img class="ms-2 recolor primary" src="https://everloved.com/static/svg/right-arrow-primary.0f1678eb5166.svg" width="20" height="15" alt="Right arrow">
+          </a>
+        </div>
+        <div class="obituary-summary d-none d-md-block d-lg-none">
+          <p>&quot;13 Brethren, I do not regard myself as having laid hold of it yet; but one thing I do: forgetting what lies behin…</p>
+          <a class="track-click d-inline-block" href="/life-of/vincent-villuri/" data-event-action="visit-memorial" data-event-category="">
+            Read more<img class="ms-2 recolor primary" src="https://everloved.com/static/svg/right-arrow-primary.0f1678eb5166.svg" width="20" height="15" alt="Right arrow">
+          </a>
+        </div>
+      
+    </div>
+  </div>
+  
+    <div class="obituary-summary d-md-none">
+      <p>&quot;13 Brethren, I do not regard myself as having laid hold of it y…</p>
+      <a class="track-click d-inline-block" href="/life-of/vincent-villuri/" data-event-action="visit-memorial" data-event-category="">
+        Read more<img class="ms-2 recolor primary" src="https://everloved.com/static/svg/right-arrow-primary.0f1678eb5166.svg" width="20" height="15" alt="Right arrow">
+      </a>
+    </div>
+  
+
+  
+    <div class="memorial-btn d-none d-lg-block">
+      <a class="btn btn-outline-secondary track-click" href="/life-of/vincent-villuri/" data-event-action="visit-memorial" data-event-category="">Go to memorial</a>
+    </div>
+  
+</div>
+
+    </div>
+  
+
+  </div>
+
+    </main>
+
+    
+      <footer class="">
+        
+
+<div class="footer-container container d-flex">
+  
+    <div class="footer-left-container d-flex flex-wrap">
+      
+        <a class="track-click-with-delay" data-event-action="footer-create-memorial" data-event-category="sitewide navigation" href="/online-memorials/?flow=103">Create Memorial</a>
+        <a class="track-click-with-delay" data-event-action="footer-publish-obituary" data-event-category="sitewide navigation" href="/obituaries/?flow=103">Publish Obituary</a>
+        <a class="track-click-with-delay" data-event-action="footer-send-invitation" data-event-category="sitewide navigation" href="/funeral-announcements/?flow=103">Send Invitations</a>
+        <a class="track-click-with-delay" data-event-action="footer-collect-memories" data-event-category="sitewide navigation" href="/memories-and-condolences/?flow=103">Collect Memories</a>
+        <a class="track-click-with-delay" data-event-action="footer-send-flowers" data-event-category="sitewide navigation" href="/funeral-flowers/?flow=103">Send Flowers</a>
+        <a class="track-click-with-delay" data-event-action="footer-read-articles" data-event-category="sitewide navigation" href="/articles/">Read Articles</a>
+        <a class="track-click-with-delay" data-event-action="footer-funeral-homes" data-event-category="sitewide navigation" href="/funeral-homes/">Funeral Homes</a>
+        <a class="track-click-with-delay" data-event-action="footer-plan-funeral" data-event-category="sitewide navigation" href="/funeral-planning/?flow=103">Plan a Funeral</a>
+        <a class="track-click-with-delay" data-event-action="footer-browse-memorials" data-event-category="sitewide navigation" href="/online-memorials/directory/">Browse Memorials</a>
+        <a class="track-click-with-delay" data-event-action="footer-funeral-homes-marketing" data-event-category="sitewide navigation" href="/for-funeral-homes/?flow=103">For Funeral Homes</a>
+        <a class="track-click-with-delay" data-event-action="footer-cemeteries-marketing" data-event-category="sitewide navigation" href="/for-cemeteries/?flow=103">For Cemeteries</a>
+        <a class="track-click-with-delay" data-event-action="footer-hospice-employees" data-event-category="sitewide navigation" href="/for-hospices/?flow=103">For Hospices</a>
+        <a class="track-click-with-delay" data-event-action="footer-charities-marketing" data-event-category="sitewide navigation" href="/for-charities/?flow=103">For Charities</a>
+        <a class="track-click-with-delay" data-event-action="footer-cemeteries" data-event-category="sitewide navigation" href="/cemeteries/">Cemeteries</a>
+        <a class="track-click-with-delay" data-event-action="footer-funeral-products" data-event-category="sitewide navigation" href="/funeral-products/?flow=103">Funeral Products</a>
+        <a class="track-click-with-delay" data-event-action="footer-donations" data-event-category="sitewide navigation" href="/memorial-donations/">Collect Donations</a>
+        <a class="track-click-with-delay" data-event-action="footer-hospices" data-event-category="sitewide navigation" href="/hospices/">Hospices</a>
+        <a class="track-click-with-delay" data-event-action="footer-fundraising" data-event-category="sitewide navigation" href="/funeral-fundraising/">Funeral Fundraising</a>
+        <a class="track-click-with-delay" data-event-action="footer-discussions" data-event-category="sitewide navigation" href="/grief/?flow=103">Grief Support</a>
+        <a class="track-click-with-delay" data-event-action="footer-final-wishes" data-event-category="sitewide navigation" href="/final-wishes/">Share Final Wishes</a>
+        <a class="track-click-with-delay" data-event-action="footer-city-obituaries" data-event-category="sitewide navigation" href="/obituary-search/">Obituary Search</a>
+        <a class="track-click-with-delay" data-event-action="footer-printable-resources" data-event-category="sitewide navigation" href="/printable-resources/">Printable Resources</a>
+        <a class="track-click-with-delay" data-event-action="footer-donation-orgs" data-event-category="sitewide navigation" href="/whole-body-donation/">Whole Body Donation</a>
+        <a class="track-click-with-delay" data-event-action="footer-death-doulas" data-event-category="sitewide navigation" href="/death-doulas/">Death Doulas</a>
+        <a class="track-click-with-delay" data-event-action="footer-pet-memorials" data-event-category="sitewide navigation" href="/pet-memorials/">Pet Memorials</a>
+        <a class="track-click-with-delay" data-event-action="footer-post-death-checklist" data-event-category="sitewide navigation" href="/after-death-checklist/">Post-Death Checklist</a>
+        <a class="track-click-with-delay" data-event-action="footer-event-spaces" data-event-category="sitewide navigation" href="/funeral-venues/">Event Spaces</a>
+        <a class="track-click-with-delay" data-event-action="footer-record-key-info" data-event-category="sitewide navigation" href="/key-info/">Record Key Information</a>
+        <a class="track-click-with-delay" data-event-action="footer-plan-ahead" data-event-category="sitewide navigation" href="/prepare/">Plan Ahead</a>
+        <a class="track-click-with-delay" data-event-action="footer-ai-obituary" data-event-category="sitewide navigation" href="/obituary-writing/">Write Obituary</a>
+      
+    </div>
+  
+
+  <div class="footer-right-container d-flex ">
+    <div class="legal-container d-flex">
+      <a class="track-click-with-delay" data-event-action="footer-help" data-event-category="sitewide navigation" href="https://support.everloved.com" target="_blank">Help</a>
+      <a class="track-click-with-delay" data-event-action="footer-terms" data-event-category="sitewide navigation" href="/terms-of-service/">Terms</a>
+      <a class="track-click-with-delay" data-event-action="footer-privacy" data-event-category="sitewide navigation" href="/privacy-policy/">Privacy</a>
+      <a class="track-click-with-delay" data-event-action="footer-copyright" data-event-category="sitewide navigation" href="/copyright-policy/">Copyright</a>
+      <a class="track-click-with-delay" onclick="window.Osano.cm.showDoNotSell()" data-event-action="footer-do-not-sell" data-event-category="sitewide navigation" href="#">Do Not Sell or Share My Personal Information</a>
+      <a class="track-click-with-delay" onclick="window.Osano.cm.showDrawer('osano-cm-dom-info-dialog-open')" data-event-action="footer-consent-management" data-event-category="sitewide navigation" href="#">Cookie Preferences</a>
+      
+        <a class="track-click-with-delay" data-event-action="footer-sitemap" data-event-category="sitewide navigation" href="/sitemap/">Sitemap</a>
+        <a class="track-click-with-delay" data-event-action="footer-about-us" data-event-category="sitewide navigation" href="/about-us/">About Us</a>
+        <a class="track-click-with-delay" data-event-action="footer-affiliate" data-event-category="sitewide navigation" href="/for-affiliates/">Become an Affiliate</a>
+        <a class="track-click-with-delay" data-event-action="footer-community-guidelines" data-event-category="sitewide navigation" href="/community-guidelines/">Community Guidelines</a>
+        <a class="track-click-with-delay" data-event-action="footer-affiliate-disclosure" data-event-category="sitewide navigation" href="/affiliate-disclosure/">Affiliate Disclosure</a>
+      
+    </div>
+    
+      <div class="legal-container d-flex">
+        <a class="track-click-with-delay" data-event-action="footer-facebook" data-event-category="sitewide navigation" href="https://www.facebook.com/everlovedmemorials/" target="_blank">
+          <img src="https://everloved.com/static/img/logos/facebook.4ee1779e79a5.png" alt="facebook icon" width=22.5 height=22.5>
+        </a>
+        <a class="track-click-with-delay" data-event-action="footer-facebook" data-event-category="sitewide navigation" href="https://www.instagram.com/everlovedteam/" target="_blank">
+          <img class="recolor primary" src="https://everloved.com/static/svg/instagram.81e0d8a058b2.svg" alt="instagram icon" width=22.5 height=22.5>
+        </a>
+      </div>
+    
+    <div>
+      &copy; 2025 Ever Loved, Inc.
+    </div>
+  </div>
+</div>
+
+      </footer>
+    
+
+    
+    <script>
+      if (window.document.documentMode) {
+        window.alert('Your browser is no longer supported. Please visit https://everloved.com from another browser.');
+      }
+    </script>
+
+    
+      <script id="props" type="application/json">{}</script>
+    
+
+    <script src="https://everloved.com/static/js/runtime.13d4876624ea.js" crossorigin="anonymous"></script>
+    <script src="https://everloved.com/static/js/vendors~core.38f8fce93644.js" crossorigin="anonymous"></script>
+<script src="https://everloved.com/static/js/core.d278a5b884d2.js" crossorigin="anonymous"></script>
+    <script>
+      window.initReCAPTCHAs = function() { return };
+      eljs.core.initBase({
+        debug: false,
+        facebookAppId: '978656935650765',
+        reCAPTCHASiteKey: '6LeHgv4ZAAAAAHpGV8zlIbJpMLfWlPzeAZY2Qveu',
+        shouldLoadHighlight: 'False',
+        siteUrl: 'https://everloved.com'
+      });
+    </script>
+    <script>
+      var props = JSON.parse(document.getElementById('props').textContent);
+    </script>
+
+    
+
+    <script>
+      eljs.core.initBaseOnReady();
+    </script>
+
+    
+      <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+      <script type="text/javascript">
+        window.Beacon('init', 'acede8f0-0568-40ea-a174-83da0a2ed6da');
+        window.Beacon('config', {
+          hideFABOnMobile: window.isOnMobile && window.hideSupportChatOnMobile,
+          display: { style: 'manual' },
+        });
+        if (false) {
+          window.Beacon('identify', {
+            email: '',
+            name: '',
+            signature: '',
+          });
+        }
+        const getHighlightSessionUrl = () => {
+          return new Promise((r) => {
+            if (window.H) {
+              window.H.getSessionDetails()
+                .then(function ({ url, urlWithTimestamp }) {
+                  r(url);
+                })
+                .catch(() => {});
+            }
+            setTimeout(() => getHighlightSessionUrl().then(r), 100);
+          });
+        };
+        getHighlightSessionUrl().then((url) => {
+          window.Beacon("session-data", { "Highlight Session URL": url });
+        });
+      </script>
+    
+
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'988db84aae9d6a53',t:'MTc1OTUwNzkzMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
